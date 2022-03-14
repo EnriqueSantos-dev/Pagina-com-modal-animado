@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Modal animado</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class='bx bx-code'></i>
+            <span>Coding</span>
+            <i class='bx bx-code-alt' ></i> 
+        </div>
+        <div class="container-dark">
+            <span>Dark mode</span>
+            <div class="dark-mode">
+                <div class="control-dark">
+                    <button class="btn-dark-mode"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="box-control-card-main">
+        <div class="card-main">
+            <div class="internal-box">
+                <img src="me.png" alt="">
+                <div class="text">
+                    <spam><strong>Enrique Santos</strong></spam>
+                    <span>Front-End developer</span>
+                </div>
+            </div>
+            <div class="skils">
+                <h1>My skils :</h1>
+                <div class="icons-skil">
+                    <i class='bx bxl-html5'></i>
+                    <i class='bx bxl-javascript'></i>
+                    <i class='bx bxl-css3'></i>
+                    <i class='bx bxl-github'></i>
+                    <i class='bx bxl-git'></i>
+                </div>
+            </div>
+            <div class="active-modal">
+                <button id="btn-modal">Contact me</button>
+            </div>
+        </div>
+        <div class="modal">
+            <i class="uil uil-multiply exit"></i>
+            <form> 
+                <div class="area-input">
+                    <label for="user">Your name</label>
+                    <div class="box-flex-input-label">
+                        <i class='bx bx-user icon-modal'></i>
+                        <input type="text" name = "user"id="user" placeholder="insert your name" autocomplete="off" autofocus required>
+                    </div> 
+                </div>
+                <div class="area-input">
+                    <label for="name">Your email</label>
+                    <div class="box-flex-input-label">
+                        <i class='bx bx-envelope icon-modal' ></i>
+                        <input type="email" name = "email" id="name" placeholder="insert your email" autocomplete="off" autofocus required>
+                    </div>
+                </div>
+                <div class="description">
+                    <label for="area-description">
+                        Drescription in here   
+                    </label>
+                    <textarea name="description" id = "area-description"></textarea>
+                </div>
+                
+                <div class="submit">
+                    <input type="submit" value="send">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
