@@ -16,6 +16,8 @@
     --font-tittle: 1.5rem;
     --box-shadow: #6b6b6b;
     --color-icons: #5a5a5a;
+    --hover-label-area: #4070f2;
+    --exit-modal: #5a5a5a;
 }
 input{
     outline: none;
@@ -89,7 +91,7 @@ header .logo i{
     color: var(--text);
 }
 .internal-box img{
-    border: solid 2px var(--primary);
+    border: solid 3.5px var(--primary);
     padding: 2px;
     max-width: 100px;
     width: 100%;
@@ -105,9 +107,10 @@ header .logo i{
 
 .skils{
     margin-top: 20px;
-    color: var(--text-tittle);
+    color: var(--primary);
     font-size: var(--font-tittle);
     font-weight: 500;
+    letter-spacing: 2px;
 }
 .icons-skil{
     margin-top:10px;
@@ -173,6 +176,7 @@ header .logo i{
     right: 0;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    color: var(--exit-modal);
 }
 .modal i.exit:hover{
     color:var(--primary) ;
@@ -208,12 +212,15 @@ form{
     background-color: #eee;
 }
 
-.area-input .box-flex-input-label:hover{
-    border-bottom: 2px solid var(--primary);
+.area-input .box-flex-input-label:hover,#area-description:hover{
+    border-bottom: 2px solid var(--hover-label-area);
 }
 
 .area-input label,.description label {
     font-size: var(--font-tittle);
+    color: var(--text-tittle);
+    display: block;
+    margin-bottom: 5px;
 }
 
 .area-input .box-flex-input-label{
@@ -258,12 +265,14 @@ form .submit{
     width: 50%;
 }
 form .submit input{
+    font-weight: 600;
     width: 100%;
     display: block;
-    padding:20px 30px;
+    padding:20px 20px;
     border-radius: 6px;
-    color: #fff;
+    color:var(--second);
     font-size: var(--font-tittle);
+    cursor: pointer;
     background-color: var(--primary);
 }
                                         /* Área submit */
@@ -302,6 +311,7 @@ form .submit input{
     --text: #fff;
     --text-tittle:rgb(78, 78, 78);
     --box-shadow: #4070f2;
+    --hover-label-area:#6b6b6b;
 }
                                     /* AJUSTES NA CORES ROOTS */
 
