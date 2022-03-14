@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg:#4070f2;
+    --primary: #4070f2;
+    --second: #fff;
+    --text: #6b6b6b;
+    --text-tittle: #5a5a5a;
+    --font-size: 1.25rem;
+    --font-header: 2rem;
+    --font-skil-icons:3.75rem;
+    --font-tittle: 1.5rem;
+    --box-shadow: #6b6b6b;
+    --color-icons: #5a5a5a;
+}
+input{
+    outline: none;
+    border: 0;
+}
+body{
+    background-color: var(--bg);
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Área do header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    padding: 30px 20px;
+    font-size: var(--font-tittle);
+}
+header .logo i{
+    font-size: var(--font-header);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    gap: 5px;
+    color: var(--second);
+    font-weight: 600px;
+}
+/* Área do header */
+
+
+/*                  Card main                       */
+
+/* Container de controle do card-main */
+.box-control-card-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.card-main{
+    background-color: var(--second);
+    padding: 25px;
+    margin: 0 10px;
+    border-radius: 6px;
+    max-width: 500px;
+    width: 100%;
+    max-height: 420px;
+    border: 0;
+    box-shadow: 0 0 10px var(--box-shadow);
+}
+
+.internal-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+}
+.internal-box .text{
+    font-size: var(--font-size);
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    color: var(--text);
+}
+.internal-box img{
+    border: solid 2px var(--primary);
+    padding: 2px;
+    max-width: 100px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;    
+}
+.internal-box img:hover{
+    transform: rotateY(360deg) scale(1.2);
+}
+
+/* display skills */
+
+.skils{
+    margin-top: 20px;
+    color: var(--text-tittle);
+    font-size: var(--font-tittle);
+    font-weight: 500;
+}
+.icons-skil{
+    margin-top:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:var(--font-skil-icons);
+    padding: 1px;
+    
+}
+.icons-skil i{
+    cursor: grab;
+    color: var(--primary);
+}
+.icons-skil i:hover{
+    border-bottom: 2px solid var(--primary);
+}
+/* display skills */
+
+
+/* Active modal and btn-modal */
+.active-modal{
+    margin:35px 0px 60px;
+    width: 100%;
+}
+.active-modal #btn-modal{
+    width: 100%;
+    padding: 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: var(--primary);
+    color: var(--second);
+    font-size: var(--font-tittle);
+}
+/* Active modal and btn-modal */
+
+/*                                           Card main                       */
+
+
+
+/*                                           Área Modal                       */
+
+/* modal settings */
+.modal{
+    display: none;
+    background-color: var(--second);
+    max-width: 600px;
+    width: 100%;
+    border-radius: 6px;
+    border: 0;
+    height: 600px;
+    box-shadow: 0 0 10px var(--box-shadow);
+    padding: 25px;
+    transition: all 0.3s ease-in-out;
+}
+.modal i.exit{
+    position: absolute;
+    padding: 5px 15px;
+    font-size: 40px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.modal i.exit:hover{
+    color:var(--primary) ;
+}
+
+/* modal settings */
+
+
+/* setttings modal form */
+form{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    column-gap: 12px;
+    row-gap: 10px;
+}
+
+                                    /* setttings modal form */  
+
+                                    /* class .area-input  */
+
+.area-input{
+    margin-top: 30px;
+    line-height: 30px;
+}
+.area-input input{
+    color: var(--text-tittle);
+    font-size: var(--font-size);
+    border-radius: 6px;
+    padding: 22px;
+    width: 100%;
+    background-color: #eee;
+}
+
+.area-input .box-flex-input-label:hover{
+    border-bottom: 2px solid var(--primary);
+}
+
+.area-input label,.description label {
+    font-size: var(--font-tittle);
+}
+
+.area-input .box-flex-input-label{
+    font-size: var(--font-size);
+    display: flex;
+    padding: 0 10px;
+    gap: 0px;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #eee;
+}
+.icon-modal{
+    color: var(--color-icons);
+}
+
+                                        /* Description */
+
+form .description{
+    margin-top: 10px;
+    width: 100%;
+    grid-column: 1 / 3;
+
+}
+.description textarea{
+    resize: none;
+    width: 100%;
+    height: 200px;
+    border: 0;
+    background-color: #eee;
+    font-size: var(--font-size);
+    color: var(--text-tittle);
+    border-radius: 6px;
+    outline: none;
+    padding: 20px;
+}
+                                        /* Description */
+
+                                        /* Área submit MODAL */
+form .submit{
+    grid-column: 1/3;
+    margin: 35px auto;
+    width: 50%;
+}
+form .submit input{
+    width: 100%;
+    display: block;
+    padding:20px 30px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: var(--font-tittle);
+    background-color: var(--primary);
+}
+                                        /* Área submit */
+
+
+/* Desaparecer o modal quando receber a classe off passada no javascript */
+
+.card-main.off{
+    display: none;
+}
+
+/* Desaparecer o modal quando receber a classe off passada no javascript */
+
+
+                        /* Ativa o modal e as animações da sua chegada */
+
+.modal.active{
+    display: block;
+    animation-name: showmodal;
+    animation-duration: 1s;
+    animation-timing-function:cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation-fill-mode: forwards;
+}
+
+                        /* Ativa o modal e as animações da sua chegada */
+
+
+                                    /* DARK MODE  */
+
+
+                                    /* AJUSTES NA CORES ROOTS */
+.dark:root{
+    --bg: #222;
+    --primary: #fff;
+    --second: #4070f2;
+    --text: #fff;
+    --text-tittle:rgb(78, 78, 78);
+    --box-shadow: #4070f2;
+}
+                                    /* AJUSTES NA CORES ROOTS */
+
+
+.container-dark{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    top: 14px;
+    right: 0;
+    margin: 0 15px;
+}
+.container-dark span{
+    color: var(--second);
+    font-weight: 600;
+}
+.dark-mode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 15px;
+    right: 0;
+    background-color: #6b6b6b8a;
+    width: 70px;
+    height: 40px;
+    border-radius:10px ;
+    overflow: hidden;
+}
+
+.dark-mode .control-dark{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 60px;
+    width: 100%;
+    background-color: #5a5a5a;
+    height: 33px;
+    border-radius:10px ;
+    padding:2px;
+}
+.dark-mode .control-dark .btn-dark-mode{
+    position: absolute;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    background-color: #4070f2;
+    border: 0;
+    border-radius: 50%;
+}
+
+                    /* ANIMAÇÕES DO BOTÃO DE TROCA DE MODO: DARK E LIGTH */
+
+.btn-dark-mode.active{
+    animation-name:animation-btn-dark-mode ;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+.btn-dark-mode.offreturn{
+    animation-name:animation-btn-dark-return;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+.text,.icons-skil{
+    transition: all 0.3s ease-in-out;
+}
+
+                    /* ANIMAÇÕES DO BOTÃO DE TROCA DE MODO: DARK E LIGTH */
+
+
+
+                                /* CONSTRUÇÃO DAS ANIMAÇÕES */
+
+@keyframes animation-btn-dark-mode {
+    to {
+        transform: translateX(26px);
+    }
+}
+@keyframes animation-btn-dark-return{
+    from{
+        transform: translateX(26px);
+    }
+}
+
+@keyframes showmodal {
+    from{
+        transform: translateY(-140%);
+    }
+    to{
+       transform: translateY(0); 
+    }
+    
+}
+
+                                /* CONSTRUÇÃO DAS ANIMAÇÕES */
+
+
+
+                                /* @media */
+
+@media(max-width: 487px){
+    :root{
+        --font-size:1rem;
+        --font-header: 2.2rem;
+        --font-tittle: 1.1rem;
+        --font-skil-icons: 3.5rem;
+    }
+    .internal-box img{
+        max-width: 80px;
+    }
+    .container-dark{
+        flex-direction: column;
+        row-gap: 0;
+    }
+}
+@media(max-width: 380px){
+    :root{
+        --font-size:.9rem;
+        --font-header: 2rem;
+        --font-tittle: 1rem;
+        --font-skil-icons: 3rem;
+    }
+    .active-modal,.skils{
+        margin:40px 0px 60px;
+    }
+}

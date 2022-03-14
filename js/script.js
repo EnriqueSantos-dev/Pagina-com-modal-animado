@@ -1,7 +1,9 @@
 const toggleactive = document.querySelector("#btn-modal"),
     modalactive = document.querySelector('.card-main'),
     modalshow = document.querySelector(".modal"),
-    btnexit = document.querySelector(".exit");
+    btnexit = document.querySelector(".exit"),
+    dark = document.querySelector("html"),
+    btndark = document.querySelector(".btn-dark-mode");
 
 let btndarkmode = document.querySelector(".btn-dark-mode");
 
@@ -26,4 +28,10 @@ btndarkmode.addEventListener("click", () => {
         btndarkmode.classList.remove("offreturn");
     }
     
+});
+
+
+// fucnção de ativar o dark mode
+btndark.addEventListener("click", () => {
+    dark.classList.toggle("dark");
 });

@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     
     <title>Modal animado</title>
@@ -26,10 +25,14 @@
             </div>
         </div>
     </header>
+
     <div class="box-control-card-main">
+
+         <!-- Card main -->
+
         <div class="card-main">
             <div class="internal-box">
-                <img src="me.png" alt="">
+                <img src="../pics/me.png" alt="">
                 <div class="text">
                     <spam><strong>Enrique Santos</strong></spam>
                     <span>Front-End developer</span>
@@ -49,21 +52,24 @@
                 <button id="btn-modal">Contact me</button>
             </div>
         </div>
+
+        <!-- Modal -->
+
         <div class="modal">
-            <i class="uil uil-multiply exit"></i>
+            <i class='bx bx-x exit'></i>
             <form> 
                 <div class="area-input">
-                    <label for="user">Your name</label>
+                    <label for="user">Name</label>
                     <div class="box-flex-input-label">
                         <i class='bx bx-user icon-modal'></i>
-                        <input type="text" name = "user"id="user" placeholder="insert your name" autocomplete="off" autofocus required>
+                        <input type="text" name = "user"id="user" placeholder="Insert your name" autocomplete="off" autofocus required>
                     </div> 
                 </div>
                 <div class="area-input">
-                    <label for="name">Your email</label>
+                    <label for="name">Email</label>
                     <div class="box-flex-input-label">
                         <i class='bx bx-envelope icon-modal' ></i>
-                        <input type="email" name = "email" id="name" placeholder="insert your email" autocomplete="off" autofocus required>
+                        <input type="email" name = "email" id="name" placeholder="Insert your email" autocomplete="off" autofocus required>
                     </div>
                 </div>
                 <div class="description">
@@ -80,6 +86,6 @@
         </div>
     </div>
     
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
