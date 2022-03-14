@@ -100,7 +100,7 @@ header .logo i{
     transition: all 0.4s ease-in-out;    
 }
 .internal-box img:hover{
-    transform: rotateY(360deg) scale(1.2);
+    transform:  scale(1.2);
 }
 
 /* display skills */
